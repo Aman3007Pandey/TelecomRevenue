@@ -7,11 +7,7 @@ This project involves data analytics for telecom companies using data provided b
 
 
 ## Authors
-
-- [Vansh Tandon(TAS201)](https://www.github.com/tandonvansh)
 - [Aman Pandey (TAS208)](https://github.com/AmanSigmoidAnalytics)
-- [Vranda Mahajan (TAS202)](https://github.com/vvrandaa)
-- [Mohan Reddy (TAS212)](https://github.com/mohan-333)
 
 ## Table of Contents
 
