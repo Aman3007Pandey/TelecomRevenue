@@ -1,0 +1,352 @@
+2024-06-10 16:59:30,273 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 16:59:30,578 - INFO - Connection to S3 successful
+2024-06-10 16:59:32,008 - INFO - Current week number: 24
+2024-06-10 16:59:32,021 - INFO - Connected to Kafka successfully
+2024-06-10 16:59:32,022 - INFO - Starting Kafka producer...
+2024-06-10 16:59:33,113 - INFO - Connection to S3 successful
+2024-06-10 16:59:36,178 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 16:59:36,185 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 16:59:36,185 - INFO - Schema of DataFrame:
+2024-06-10 16:59:36,185 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 16:59:36,678 - INFO - Total number of messages to be sent: 0
+2024-06-10 16:59:36,679 - ERROR - An error occurred during processing: 'DataFrame' object has no attribute 'iterrows'
+2024-06-10 16:59:36,679 - INFO - Closing down clientserver connection
+2024-06-10 17:00:09,239 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 17:00:09,498 - INFO - Connection to S3 successful
+2024-06-10 17:00:10,928 - INFO - Current week number: 24
+2024-06-10 17:00:10,940 - INFO - Connected to Kafka successfully
+2024-06-10 17:00:10,940 - INFO - Starting Kafka producer...
+2024-06-10 17:00:11,997 - INFO - Connection to S3 successful
+2024-06-10 17:00:15,128 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 17:00:15,135 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 17:00:15,135 - INFO - Schema of DataFrame:
+2024-06-10 17:00:15,135 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 17:00:15,650 - INFO - Total number of messages to be sent: 30
+2024-06-10 17:00:15,651 - ERROR - An error occurred during processing: 'DataFrame' object has no attribute 'iterrows'
+2024-06-10 17:00:15,652 - INFO - Closing down clientserver connection
+2024-06-10 17:04:33,875 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 17:04:34,222 - INFO - Connection to S3 successful
+2024-06-10 17:04:35,661 - INFO - Current week number: 24
+2024-06-10 17:04:35,683 - INFO - Connected to Kafka successfully
+2024-06-10 17:04:35,684 - INFO - Starting Kafka producer...
+2024-06-10 17:04:36,755 - INFO - Connection to S3 successful
+2024-06-10 17:04:40,267 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 17:04:40,274 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 17:04:40,274 - INFO - Schema of DataFrame:
+2024-06-10 17:04:40,274 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 17:04:40,778 - INFO - Total number of messages to be sent: 30
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Message delivered to rev_topic [1]
+2024-06-10 17:04:41,849 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 17:04:41,849 - INFO - Total number of messages sent: 30
+2024-06-10 17:04:41,850 - INFO - Closing down clientserver connection
+2024-06-10 18:49:19,472 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 18:49:19,718 - INFO - Connection to S3 successful
+2024-06-10 18:49:21,164 - INFO - Current week number: 24
+2024-06-10 18:49:21,188 - INFO - Connected to Kafka successfully
+2024-06-10 18:49:21,188 - INFO - Starting Kafka producer...
+2024-06-10 18:49:22,258 - INFO - Connection to S3 successful
+2024-06-10 18:49:25,410 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 18:49:25,416 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 18:49:25,416 - INFO - Schema of DataFrame:
+2024-06-10 18:49:25,416 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 18:49:25,938 - INFO - Total number of messages to be sent: 30
+2024-06-10 18:49:26,954 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,954 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,955 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,956 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,957 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,957 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,957 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:49:26,957 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 18:49:26,957 - INFO - Total number of messages sent: 30
+2024-06-10 18:49:26,959 - INFO - Closing down clientserver connection
+2024-06-10 18:59:06,325 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 18:59:06,567 - INFO - Connection to S3 successful
+2024-06-10 18:59:08,040 - INFO - Current week number: 24
+2024-06-10 18:59:08,054 - INFO - Connected to Kafka successfully
+2024-06-10 18:59:08,054 - INFO - Starting Kafka producer...
+2024-06-10 18:59:09,126 - INFO - Connection to S3 successful
+2024-06-10 18:59:12,285 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 18:59:12,292 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 18:59:12,292 - INFO - Schema of DataFrame:
+2024-06-10 18:59:12,292 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 18:59:12,797 - INFO - Total number of messages to be sent: 30
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,846 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,847 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,847 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:59:13,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:59:13,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:59:13,848 - INFO - Message delivered to rev_topic [1]
+2024-06-10 18:59:13,849 - INFO - Message delivered to rev_topic [2]
+2024-06-10 18:59:13,849 - INFO - Message delivered to rev_topic [2]
+2024-06-10 18:59:13,849 - INFO - Message delivered to rev_topic [2]
+2024-06-10 18:59:13,849 - INFO - Message delivered to rev_topic [2]
+2024-06-10 18:59:13,849 - INFO - Message delivered to rev_topic [2]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,850 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Message delivered to rev_topic [0]
+2024-06-10 18:59:13,851 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 18:59:13,851 - INFO - Total number of messages sent: 30
+2024-06-10 18:59:13,853 - INFO - Closing down clientserver connection
+2024-06-10 20:12:16,638 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 20:12:16,908 - INFO - Connection to S3 successful
+2024-06-10 20:12:18,423 - INFO - Current week number: 24
+2024-06-10 20:12:18,444 - INFO - Connected to Kafka successfully
+2024-06-10 20:12:18,444 - INFO - Starting Kafka producer...
+2024-06-10 20:12:19,533 - INFO - Connection to S3 successful
+2024-06-10 20:12:22,927 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 20:12:22,934 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 20:12:22,934 - INFO - Schema of DataFrame:
+2024-06-10 20:12:22,934 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 20:12:23,500 - INFO - Total number of messages to be sent: 30
+2024-06-10 20:12:24,549 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,550 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,551 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:12:24,551 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,552 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:12:24,553 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 20:12:24,553 - INFO - Total number of messages sent: 30
+2024-06-10 20:12:24,554 - INFO - Closing down clientserver connection
+2024-06-10 20:14:04,520 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 20:14:04,795 - INFO - Connection to S3 successful
+2024-06-10 20:14:06,302 - INFO - Current week number: 24
+2024-06-10 20:14:06,316 - INFO - Connected to Kafka successfully
+2024-06-10 20:14:06,316 - INFO - Starting Kafka producer...
+2024-06-10 20:14:07,422 - INFO - Connection to S3 successful
+2024-06-10 20:14:10,407 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 20:14:10,414 - INFO - Columns in DataFrame: ['msisdn', 'revenue_usd', 'week_number', 'timestamp']
+2024-06-10 20:14:10,414 - INFO - Schema of DataFrame:
+2024-06-10 20:14:10,414 - INFO - [('msisdn', 'string'), ('revenue_usd', 'string'), ('week_number', 'string'), ('timestamp', 'string')]
+2024-06-10 20:14:10,950 - INFO - Total number of messages to be sent: 30
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,963 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:14:11,964 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,964 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,964 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,964 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,964 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,965 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,965 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,965 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,965 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,965 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:14:11,966 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 20:14:11,966 - INFO - Total number of messages sent: 30
+2024-06-10 20:14:11,966 - INFO - Closing down clientserver connection
+2024-06-10 20:24:31,624 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 20:24:31,909 - INFO - Connection to S3 successful
+2024-06-10 20:24:33,462 - INFO - Current week number: 24
+2024-06-10 20:24:33,481 - INFO - Connected to Kafka successfully
+2024-06-10 20:24:33,482 - INFO - Starting Kafka producer...
+2024-06-10 20:24:34,566 - INFO - Connection to S3 successful
+2024-06-10 20:24:37,870 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 20:24:37,876 - INFO - Columns in DataFrame: ['msisdn', 'week_number', 'revenue_usd', 'timestamp']
+2024-06-10 20:24:37,876 - INFO - Schema of DataFrame:
+2024-06-10 20:24:37,876 - INFO - [('msisdn', 'string'), ('week_number', 'int'), ('revenue_usd', 'string'), ('timestamp', 'string')]
+2024-06-10 20:24:38,487 - INFO - Total number of messages to be sent: 28
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,504 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,505 - INFO - Message delivered to rev_topic [1]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Message delivered to rev_topic [2]
+2024-06-10 20:24:39,507 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 20:24:39,507 - INFO - Total number of messages sent: 28
+2024-06-10 20:24:39,507 - INFO - Closing down clientserver connection
+2024-06-10 20:26:16,236 - INFO - NumExpr defaulting to 8 threads.
+2024-06-10 20:26:16,499 - INFO - Connection to S3 successful
+2024-06-10 20:26:18,056 - INFO - Current week number: 24
+2024-06-10 20:26:18,068 - INFO - Connected to Kafka successfully
+2024-06-10 20:26:18,069 - INFO - Starting Kafka producer...
+2024-06-10 20:26:19,183 - INFO - Connection to S3 successful
+2024-06-10 20:26:22,472 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallrev3.csv
+2024-06-10 20:26:22,478 - INFO - Columns in DataFrame: ['msisdn', 'week_number', 'revenue_usd', 'timestamp']
+2024-06-10 20:26:22,478 - INFO - Schema of DataFrame:
+2024-06-10 20:26:22,478 - INFO - [('msisdn', 'string'), ('week_number', 'int'), ('revenue_usd', 'string'), ('timestamp', 'string')]
+2024-06-10 20:26:23,005 - INFO - Total number of messages to be sent: 28
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,013 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Message delivered to rev_topic [0]
+2024-06-10 20:26:24,015 - INFO - Data for week 24 pushed to Kafka successfully
+2024-06-10 20:26:24,015 - INFO - Total number of messages sent: 28
+2024-06-10 20:26:24,015 - INFO - Closing down clientserver connection
+2024-06-24 12:17:42,824 - INFO - NumExpr defaulting to 8 threads.
+2024-06-24 12:17:43,069 - INFO - Connection to S3 successful
+2024-06-24 12:17:44,573 - INFO - Connected to Kafka successfully
+2024-06-24 12:17:44,573 - INFO - Starting Kafka producer...
+2024-06-24 12:17:45,659 - INFO - Connection to S3 successful
+2024-06-24 12:17:46,610 - ERROR - An error occurred while connecting to S3: An error occurred (InvalidAccessKeyId) when calling the ListObjectsV2 operation: The AWS Access Key Id you provided does not exist in our records.
+2024-06-24 12:17:46,610 - ERROR - An error occurred during processing: 'NoneType' object has no attribute 'columns'
+2024-06-24 12:17:46,611 - INFO - Closing down clientserver connection
+2024-06-24 18:34:45,881 - ERROR - Error getting current week number: Mocked exception
+Traceback (most recent call last):
+  File "/Users/amanpandey/Desktop/mock/src/utility/week_sync.py", line 29, in get_current_week_number
+    now = datetime.now()
+          ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Mocked exception

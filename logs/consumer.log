@@ -1,0 +1,212 @@
+2024-06-10 20:57:12,244 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-10 20:57:12,245 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-10 20:57:13,635 - INFO - Connection to Snowflake successful
+2024-06-10 20:57:13,726 - INFO - Connection to S3 successful
+2024-06-10 20:57:14,616 - INFO - Number of results in first chunk: 3
+2024-06-10 20:57:14,619 - INFO - Connection to S3 successful
+2024-06-10 20:57:17,329 - ERROR - An error occurred while connecting to S3: An error occurred while calling o41.csv.
+: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "s3"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3443)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWritingFileFormat(DataSource.scala:454)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWriting(DataSource.scala:530)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:387)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:360)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:239)
+	at org.apache.spark.sql.DataFrameWriter.csv(DataFrameWriter.scala:847)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+2024-06-10 20:57:17,329 - INFO - closed
+2024-06-10 20:57:17,329 - INFO - No async queries seem to be running, deleting session
+2024-06-10 20:57:17,662 - INFO - Closing down clientserver connection
+2024-06-10 21:00:12,711 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-10 21:00:12,711 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-10 21:00:14,136 - INFO - Connection to Snowflake successful
+2024-06-10 21:00:14,263 - INFO - Connection to S3 successful
+2024-06-10 21:00:14,666 - INFO - Number of results in first chunk: 3
+2024-06-10 21:00:14,669 - INFO - Connection to S3 successful
+2024-06-10 21:00:15,851 - INFO - Data uploaded to S3 successfully
+2024-06-10 21:00:15,851 - INFO - closed
+2024-06-10 21:00:15,851 - INFO - No async queries seem to be running, deleting session
+2024-06-22 20:36:42,294 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-22 20:36:42,294 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-22 20:36:56,228 - INFO - Connection to Snowflake successful
+2024-06-22 20:36:56,398 - INFO - Connection to S3 successful
+2024-06-22 20:36:56,398 - INFO - closed
+2024-06-22 20:36:56,398 - INFO - No async queries seem to be running, deleting session
+2024-06-22 20:37:25,730 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-22 20:37:25,731 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-22 20:37:27,497 - INFO - Connection to Snowflake successful
+2024-06-22 20:37:27,649 - INFO - Connection to S3 successful
+2024-06-22 20:37:29,228 - INFO - Number of results in first chunk: 131
+2024-06-22 20:37:29,246 - INFO - Connection to S3 successful
+2024-06-22 20:37:30,574 - ERROR - An error occurred while connecting to S3: Failed to upload data_2024-06-22_20-37-29.csv to myfirstbucket4563/myarchivefolder/data_2024-06-22_20-37-29.csv: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2024-06-22 20:37:30,575 - INFO - closed
+2024-06-22 20:37:30,575 - INFO - No async queries seem to be running, deleting session
+2024-06-22 20:38:20,912 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-22 20:38:20,912 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-22 20:38:23,024 - INFO - Connection to Snowflake successful
+2024-06-22 20:38:23,148 - INFO - Connection to S3 successful
+2024-06-22 20:38:23,595 - INFO - Number of results in first chunk: 131
+2024-06-22 20:38:23,603 - INFO - Connection to S3 successful
+2024-06-22 20:38:24,628 - ERROR - An error occurred while connecting to S3: Failed to upload data_2024-06-22_20-38-23.csv to myfirstbucket4563/myarchivefolder/data_2024-06-22_20-38-23.csv: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2024-06-22 20:38:24,628 - INFO - closed
+2024-06-22 20:38:24,628 - INFO - No async queries seem to be running, deleting session
+2024-06-24 12:14:04,840 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 12:14:04,840 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 12:14:06,574 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 12:14:18,098 - INFO - Kafka consumer closed.
+2024-06-24 12:14:18,100 - INFO - Closing down clientserver connection
+2024-06-24 12:14:45,116 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 12:14:45,116 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 12:14:46,539 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 12:14:53,111 - INFO - Callback Server Starting
+2024-06-24 12:14:53,112 - INFO - Socket listening on ('127.0.0.1', 52318)
+2024-06-24 12:14:56,565 - INFO - Python Server ready to receive messages
+2024-06-24 12:14:56,565 - INFO - Received command c on object id p0
+2024-06-24 12:14:56,568 - ERROR - There was an exception while executing the Python Proxy on the Python Side.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 617, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/sql/utils.py", line 115, in call
+    raise e
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/sql/utils.py", line 112, in call
+    self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)
+TypeError: insert_to_snowflake() takes 1 positional argument but 2 were given
+2024-06-24 12:14:56,613 - INFO - Kafka consumer closed.
+2024-06-24 12:14:56,615 - INFO - Closing down clientserver connection
+2024-06-24 12:14:56,615 - INFO - Closing down clientserver connection
+2024-06-24 12:15:35,837 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 12:15:35,837 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 12:15:37,290 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 12:15:40,555 - INFO - Callback Server Starting
+2024-06-24 12:15:40,555 - INFO - Socket listening on ('127.0.0.1', 52339)
+2024-06-24 12:15:42,389 - INFO - Python Server ready to receive messages
+2024-06-24 12:15:42,389 - INFO - Received command c on object id p0
+2024-06-24 12:15:42,392 - WARNING - No active connection to Snowflake
+2024-06-24 12:15:42,392 - INFO - Data inserted into Snowflake table STAGED_TABLE successfully
+2024-06-24 12:16:40,716 - INFO - Kafka consumer closed.
+2024-06-24 12:17:09,722 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 12:17:09,722 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 12:17:11,180 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 12:17:13,665 - INFO - Callback Server Starting
+2024-06-24 12:17:13,665 - INFO - Socket listening on ('127.0.0.1', 52366)
+2024-06-24 12:17:15,097 - INFO - Python Server ready to receive messages
+2024-06-24 12:17:15,098 - INFO - Received command c on object id p0
+2024-06-24 12:17:15,099 - WARNING - No active connection to Snowflake
+2024-06-24 12:17:15,099 - INFO - Data inserted into Snowflake table STAGED_TABLE successfully
+2024-06-24 12:17:29,273 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+2024-06-24 12:17:29,275 - INFO - Closing down clientserver connection
+2024-06-24 12:17:29,276 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-24 12:17:29,277 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+2024-06-24 12:17:29,280 - INFO - Closing down clientserver connection
+2024-06-24 12:17:29,280 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-24 12:17:29,280 - INFO - Closing down clientserver connection
+2024-06-24 12:17:29,280 - INFO - Kafka consumer closed.
+2024-06-24 12:17:29,284 - INFO - Closing down clientserver connection
+2024-06-24 12:17:29,285 - INFO - Closing down clientserver connection
+2024-06-24 18:30:04,029 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:30:04,029 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:30:05,288 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:30:05,291 - WARNING - No active connection to close
+2024-06-24 18:30:05,292 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:30:05,292 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:30:06,525 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:30:06,527 - WARNING - No active connection to close
+2024-06-24 18:30:06,528 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:30:06,528 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:30:07,669 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:30:07,672 - WARNING - No active connection to close
+2024-06-24 18:30:07,672 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:30:07,673 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:30:08,882 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:30:08,888 - WARNING - No active connection to close

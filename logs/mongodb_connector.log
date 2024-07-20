@@ -1,0 +1,2 @@
+2024-06-05 16:24:53,539 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: crm_cleaned.csv
+2024-06-05 16:25:27,523 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: device_cleaned.csv

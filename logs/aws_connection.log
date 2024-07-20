@@ -1,0 +1,80 @@
+2024-06-15 19:55:51,598 - INFO - Connection to S3 successful
+2024-06-15 19:55:51,601 - INFO - Connection to S3 successful
+2024-06-15 19:55:51,605 - INFO - Connection to S3 successful
+2024-06-24 18:27:30,213 - INFO - Connection to S3 successful
+2024-06-24 18:27:30,217 - INFO - Connection to S3 successful
+2024-06-24 18:27:30,220 - INFO - Connection to S3 successful
+2024-06-24 18:39:14,297 - INFO - Connection to S3 successful
+2024-06-24 18:39:14,302 - INFO - Connection to S3 successful
+2024-06-24 18:39:14,305 - INFO - Connection to S3 successful
+2024-06-24 18:44:44,783 - INFO - Connection to S3 successful
+2024-06-24 18:44:44,787 - INFO - Connection to S3 successful
+2024-06-24 18:44:44,790 - INFO - Connection to S3 successful
+2024-06-24 18:44:44,791 - ERROR - Error getting current week number: Mocked exception
+Traceback (most recent call last):
+  File "/Users/amanpandey/Desktop/mock/src/utility/week_sync.py", line 29, in get_current_week_number
+    now = datetime.now()
+          ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Mocked exception
+2024-06-24 18:45:54,541 - INFO - Connection to S3 successful
+2024-06-24 18:45:54,545 - INFO - Connection to S3 successful
+2024-06-24 18:45:54,549 - INFO - Connection to S3 successful
+2024-06-24 18:45:54,550 - ERROR - Error getting current week number: Mocked exception
+Traceback (most recent call last):
+  File "/Users/amanpandey/Desktop/mock/src/utility/week_sync.py", line 29, in get_current_week_number
+    now = datetime.now()
+          ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Mocked exception
+2024-06-24 18:45:54,552 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:45:54,552 - INFO - Connection to MongoDB successful
+2024-06-24 18:46:15,969 - INFO - Connection to S3 successful
+2024-06-24 18:46:15,973 - INFO - Connection to S3 successful
+2024-06-24 18:46:15,977 - INFO - Connection to S3 successful
+2024-06-24 18:46:15,978 - ERROR - Error getting current week number: Mocked exception
+Traceback (most recent call last):
+  File "/Users/amanpandey/Desktop/mock/src/utility/week_sync.py", line 29, in get_current_week_number
+    now = datetime.now()
+          ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+Exception: Mocked exception
+2024-06-24 18:46:15,980 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:46:15,980 - INFO - Connection to MongoDB successful
+2024-06-24 18:46:15,980 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:46:15,981 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:46:17,270 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:46:17,272 - WARNING - No active connection to close
+2024-06-24 18:46:17,272 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:46:17,273 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:46:18,542 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:46:18,545 - WARNING - No active connection to close
+2024-06-24 18:46:18,545 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:46:18,545 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:46:19,717 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:46:19,720 - WARNING - No active connection to close
+2024-06-24 18:46:19,720 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-24 18:46:19,721 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-24 18:46:20,906 - ERROR - An error occurred: 250001 (08001): None: Failed to connect to DB: psb70891.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2024-06-24 18:46:20,912 - WARNING - No active connection to close

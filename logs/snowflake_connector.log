@@ -1,0 +1,472 @@
+2024-06-06 15:11:14,984 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:11:14,985 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:11:16,488 - INFO - Connection to Snowflake successful
+2024-06-06 15:11:19,665 - INFO - Callback Server Starting
+2024-06-06 15:11:19,666 - INFO - Socket listening on ('127.0.0.1', 59968)
+2024-06-06 15:11:21,584 - INFO - Python Server ready to receive messages
+2024-06-06 15:11:21,585 - INFO - Received command c on object id p0
+2024-06-06 15:11:21,637 - ERROR - An error occurred while writing the DataFrame to Snowflake: An error occurred while calling o111.save.
+: org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: snowflake. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:738)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+	at org.apache.spark.sql.DataFrameWriter.lookupV2Provider(DataFrameWriter.scala:860)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:256)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.sendCommand(ClientServerConnection.java:244)
+	at py4j.CallbackClient.sendCommand(CallbackClient.java:384)
+	at py4j.CallbackClient.sendCommand(CallbackClient.java:356)
+	at py4j.reflection.PythonProxyHandler.invoke(PythonProxyHandler.java:106)
+	at jdk.proxy3/jdk.proxy3.$Proxy40.call(Unknown Source)
+	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1(ForeachBatchSink.scala:53)
+	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1$adapted(ForeachBatchSink.scala:53)
+	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:34)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:118)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:195)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:103)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:827)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:65)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:726)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:411)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:409)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:726)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:284)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:411)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:409)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:247)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:237)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:306)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:827)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:284)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:207)
+Caused by: java.lang.ClassNotFoundException: snowflake.DefaultSource
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+	at scala.util.Failure.orElse(Try.scala:224)
+	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+	... 45 more
+
+2024-06-06 15:11:21,637 - INFO - Data inserted into Snowflake table joined_table successfully
+2024-06-06 15:11:46,709 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+2024-06-06 15:11:46,712 - INFO - Closing down clientserver connection
+2024-06-06 15:11:46,712 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-06 15:11:46,713 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+2024-06-06 15:11:46,716 - INFO - Closing down clientserver connection
+2024-06-06 15:11:46,716 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-06 15:11:46,717 - INFO - Closing down clientserver connection
+2024-06-06 15:11:46,717 - INFO - Kafka consumer closed.
+2024-06-06 15:11:46,718 - INFO - closed
+2024-06-06 15:11:46,718 - INFO - No async queries seem to be running, deleting session
+2024-06-06 15:11:47,072 - INFO - Closing down clientserver connection
+2024-06-06 15:11:47,072 - INFO - Closing down clientserver connection
+2024-06-06 15:11:57,083 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:11:57,083 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:11:58,518 - INFO - Connection to Snowflake successful
+2024-06-06 15:14:01,346 - INFO - Kafka consumer closed.
+2024-06-06 15:23:25,241 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:23:25,242 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:23:26,731 - INFO - Connection to Snowflake successful
+2024-06-06 15:23:27,406 - INFO - Kafka consumer closed.
+2024-06-06 15:23:27,409 - INFO - closed
+2024-06-06 15:23:27,409 - INFO - No async queries seem to be running, deleting session
+2024-06-06 15:23:27,698 - INFO - Closing down clientserver connection
+2024-06-06 15:26:49,140 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:26:49,141 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:26:50,548 - INFO - Connection to Snowflake successful
+2024-06-06 15:26:51,192 - INFO - Kafka consumer closed.
+2024-06-06 15:26:51,195 - INFO - closed
+2024-06-06 15:26:51,195 - INFO - No async queries seem to be running, deleting session
+2024-06-06 15:26:51,475 - INFO - Closing down clientserver connection
+2024-06-06 15:32:49,951 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:32:49,952 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:32:51,390 - INFO - Connection to Snowflake successful
+2024-06-06 15:32:52,042 - INFO - Kafka consumer closed.
+2024-06-06 15:32:52,045 - INFO - closed
+2024-06-06 15:32:52,045 - INFO - No async queries seem to be running, deleting session
+2024-06-06 15:32:52,306 - INFO - Closing down clientserver connection
+2024-06-06 15:33:51,287 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:33:51,290 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:33:52,593 - INFO - Connection to Snowflake successful
+2024-06-06 15:33:55,539 - INFO - Callback Server Starting
+2024-06-06 15:33:55,539 - INFO - Socket listening on ('127.0.0.1', 60254)
+2024-06-06 15:33:57,266 - INFO - Python Server ready to receive messages
+2024-06-06 15:33:57,266 - INFO - Received command c on object id p0
+2024-06-06 15:35:36,312 - ERROR - An error occurred while writing the DataFrame to Snowflake: An error occurred while calling o115.save.
+: java.sql.SQLException: Status of query associated with resultSet is FAILED_WITH_ERROR. Timestamp '23' is not recognized
+  File '9MkyJ3y0w1/25.CSV.gz', line 1, character 57
+  Row 1, column "JOINED_TABLE"["TIMESTAMP":3]
+  If you would like to continue loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client. Results not generated.
+	at net.snowflake.client.jdbc.SFAsyncResultSet.getRealResults(SFAsyncResultSet.java:138)
+	at net.snowflake.client.jdbc.SFAsyncResultSet.getMetaData(SFAsyncResultSet.java:277)
+	at net.snowflake.spark.snowflake.io.StageWriter$.executeCopyIntoTable(StageWriter.scala:567)
+	at net.snowflake.spark.snowflake.io.StageWriter$.writeToTableWithStagingTable(StageWriter.scala:447)
+	at net.snowflake.spark.snowflake.io.StageWriter$.writeToTable(StageWriter.scala:287)
+	at net.snowflake.spark.snowflake.io.StageWriter$.writeToStage(StageWriter.scala:232)
+	at net.snowflake.spark.snowflake.io.package$.writeRDD(package.scala:51)
+	at net.snowflake.spark.snowflake.SnowflakeWriter.save(SnowflakeWriter.scala:74)
+	at net.snowflake.spark.snowflake.DefaultSource.createRelation(DefaultSource.scala:141)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:47)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:118)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:195)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:103)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:827)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:65)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:94)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:512)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:104)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:512)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:31)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:31)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:31)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:488)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:94)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:81)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:79)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:133)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:856)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:387)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:360)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.sendCommand(ClientServerConnection.java:244)
+	at py4j.CallbackClient.sendCommand(CallbackClient.java:384)
+	at py4j.CallbackClient.sendCommand(CallbackClient.java:356)
+	at py4j.reflection.PythonProxyHandler.invoke(PythonProxyHandler.java:106)
+	at jdk.proxy3/jdk.proxy3.$Proxy40.call(Unknown Source)
+	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1(ForeachBatchSink.scala:53)
+	at org.apache.spark.sql.execution.streaming.sources.PythonForeachBatchHelper$.$anonfun$callForeachBatch$1$adapted(ForeachBatchSink.scala:53)
+	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:34)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:118)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:195)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:103)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:827)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:65)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:726)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:411)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:409)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:726)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:284)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:411)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:409)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:247)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:237)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:306)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:827)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:284)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:207)
+
+2024-06-06 15:35:36,313 - INFO - Data inserted into Snowflake table joined_table successfully
+2024-06-06 15:35:55,967 - INFO - Kafka consumer closed.
+2024-06-06 15:40:48,993 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:40:48,994 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:40:50,435 - INFO - Connection to Snowflake successful
+2024-06-06 15:40:53,416 - INFO - Callback Server Starting
+2024-06-06 15:40:53,416 - INFO - Socket listening on ('127.0.0.1', 60364)
+2024-06-06 15:40:55,239 - INFO - Python Server ready to receive messages
+2024-06-06 15:40:55,239 - INFO - Received command c on object id p0
+2024-06-06 15:42:33,030 - INFO - Data written to joined_table successfully
+2024-06-06 15:42:33,031 - INFO - Data inserted into Snowflake table joined_table successfully
+2024-06-06 15:42:48,546 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+2024-06-06 15:42:48,549 - INFO - Closing down clientserver connection
+2024-06-06 15:42:48,550 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-06 15:42:48,551 - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+2024-06-06 15:42:48,553 - INFO - Closing down clientserver connection
+2024-06-06 15:42:48,553 - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 377, in signal_handler
+    self.cancelAllJobs()
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/context.py", line 2255, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+    ^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 169, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o22.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amanpandey/anaconda3/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-06-06 15:42:48,553 - INFO - Closing down clientserver connection
+2024-06-06 15:42:48,553 - INFO - Kafka consumer closed.
+2024-06-06 15:42:48,555 - INFO - closed
+2024-06-06 15:42:48,555 - INFO - No async queries seem to be running, deleting session
+2024-06-06 15:42:48,898 - INFO - Closing down clientserver connection
+2024-06-06 15:42:48,898 - INFO - Closing down clientserver connection
+2024-06-06 15:48:05,624 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 15:48:05,625 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 15:48:07,079 - INFO - Connection to Snowflake successful
+2024-06-06 15:48:09,692 - INFO - Callback Server Starting
+2024-06-06 15:48:09,692 - INFO - Socket listening on ('127.0.0.1', 60488)
+2024-06-06 15:48:11,068 - INFO - Python Server ready to receive messages
+2024-06-06 15:48:11,068 - INFO - Received command c on object id p0
+2024-06-06 15:48:21,019 - INFO - Data written to joined_table successfully
+2024-06-06 15:48:21,019 - INFO - Data inserted into Snowflake table joined_table successfully
+2024-06-06 15:50:09,928 - INFO - Kafka consumer closed.
+2024-06-06 15:50:09,928 - INFO - closed
+2024-06-06 16:04:59,516 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-06 16:04:59,517 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-06 16:05:00,926 - INFO - Connection to Snowflake successful
+2024-06-06 16:07:03,424 - INFO - Kafka consumer closed.
+2024-06-07 12:11:46,778 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:11:46,778 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:11:48,451 - INFO - Connection to Snowflake successful
+2024-06-07 12:11:48,452 - INFO - closed
+2024-06-07 12:11:48,452 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:12:14,804 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:12:14,804 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:12:16,246 - INFO - Connection to Snowflake successful
+2024-06-07 12:12:16,735 - ERROR - An error occurred while fetching data: 000904 (42000): 01b4d832-0205-3c62-0006-31e300037006: SQL compilation error: error line 1 at position 33
+invalid identifier 'DATE_COLUMN'
+2024-06-07 12:12:16,735 - INFO - closed
+2024-06-07 12:12:16,735 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:15:59,154 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:15:59,155 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:16:00,383 - INFO - Connection to Snowflake successful
+2024-06-07 12:16:00,749 - ERROR - An error occurred while fetching data: 000904 (42000): 01b4d836-0205-369c-0006-31e30003420a: SQL compilation error: error line 1 at position 33
+invalid identifier 'DATE_COLUMN'
+2024-06-07 12:16:00,749 - INFO - closed
+2024-06-07 12:16:00,749 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:17:02,851 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:17:02,851 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:17:04,037 - INFO - Connection to Snowflake successful
+2024-06-07 12:17:05,108 - INFO - Number of results in first chunk: 0
+2024-06-07 12:17:05,109 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 12:17:05,109 - INFO - closed
+2024-06-07 12:17:05,109 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:18:30,154 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:18:30,155 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:18:31,399 - INFO - Connection to Snowflake successful
+2024-06-07 12:18:32,240 - INFO - Number of results in first chunk: 64
+2024-06-07 12:18:32,241 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 12:18:32,241 - INFO - closed
+2024-06-07 12:18:32,241 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:21:59,414 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:21:59,415 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:22:00,924 - INFO - Connection to Snowflake successful
+2024-06-07 12:22:01,276 - INFO - Number of results in first chunk: 64
+2024-06-07 12:22:01,277 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 12:22:01,403 - INFO - closed
+2024-06-07 12:22:01,403 - INFO - No async queries seem to be running, deleting session
+2024-06-07 12:28:30,430 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 12:28:30,430 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 12:28:31,723 - INFO - Connection to Snowflake successful
+2024-06-07 12:28:32,073 - INFO - Number of results in first chunk: 64
+2024-06-07 12:28:32,075 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 12:28:33,783 - INFO - closed
+2024-06-07 12:28:33,783 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:10:45,429 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:10:45,429 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:10:46,798 - INFO - Connection to Snowflake successful
+2024-06-07 13:10:47,268 - INFO - Number of results in first chunk: 64
+2024-06-07 13:10:47,272 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 13:10:48,633 - INFO - closed
+2024-06-07 13:10:48,634 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:11:47,969 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:11:47,970 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:11:49,230 - INFO - Connection to Snowflake successful
+2024-06-07 13:11:49,613 - INFO - Number of results in first chunk: 64
+2024-06-07 13:11:49,616 - INFO - Fetched data older than 10 weeks from table joined_table
+2024-06-07 13:11:51,387 - INFO - closed
+2024-06-07 13:11:51,387 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:21:26,061 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:21:26,061 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:21:27,408 - INFO - Connection to Snowflake successful
+2024-06-07 13:21:28,473 - INFO - Number of results in first chunk: 64
+2024-06-07 13:21:28,477 - INFO - Fetched data older than 10 weeks from table JOINED_TABLE
+2024-06-07 13:21:29,953 - INFO - Data uploaded to S3 successfully
+2024-06-07 13:21:29,956 - INFO - closed
+2024-06-07 13:21:29,956 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:22:50,575 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:22:50,576 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:22:51,959 - INFO - Connection to Snowflake successful
+2024-06-07 13:22:52,322 - INFO - Number of results in first chunk: 64
+2024-06-07 13:22:52,325 - INFO - Fetched data older than 10 weeks from table JOINED_TABLE
+2024-06-07 13:22:53,918 - INFO - Data uploaded to S3 successfully
+2024-06-07 13:22:53,921 - INFO - closed
+2024-06-07 13:22:53,921 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:23:52,356 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:23:52,356 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:23:53,518 - INFO - Connection to Snowflake successful
+2024-06-07 13:23:53,922 - INFO - Number of results in first chunk: 64
+2024-06-07 13:23:53,923 - INFO - Fetched data older than 10 weeks from table JOINED_TABLE
+2024-06-07 13:23:55,254 - INFO - Data uploaded to S3 successfully
+2024-06-07 13:23:55,255 - INFO - closed
+2024-06-07 13:23:55,255 - INFO - No async queries seem to be running, deleting session
+2024-06-07 13:24:26,829 - INFO - Snowflake Connector for Python Version: 3.10.1, Python Version: 3.11.5, Platform: macOS-14.4.1-arm64-arm-64bit
+2024-06-07 13:24:26,829 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-06-07 13:24:28,050 - INFO - Connection to Snowflake successful
+2024-06-07 13:24:28,504 - INFO - Number of results in first chunk: 64
+2024-06-07 13:24:28,505 - INFO - Fetched data older than 10 weeks from table JOINED_TABLE
+2024-06-07 13:24:30,140 - INFO - Data uploaded to S3 successfully
+2024-06-07 13:24:30,141 - INFO - closed
+2024-06-07 13:24:30,141 - INFO - No async queries seem to be running, deleting session

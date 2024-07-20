@@ -1,0 +1,36 @@
+2024-06-08 17:48:51,253 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallcrm1.csv
+2024-06-08 17:48:52,171 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smalldevice1.csv
+2024-06-08 17:48:52,176 - INFO - Connection to MongoDB successful
+2024-06-08 17:48:52,213 - INFO - Data inserted into cleancrm successfully
+2024-06-08 17:48:52,213 - ERROR - An error occurred while inserting data: name must be an instance of str
+2024-06-08 17:48:52,214 - INFO - Connection to MongoDB closed
+2024-06-08 17:48:52,214 - INFO - Data insertion to MongoDB successful.
+2024-06-08 18:27:27,639 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallcrm1.csv
+2024-06-08 18:27:28,546 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smalldevice1.csv
+2024-06-08 18:27:28,550 - INFO - Connection to MongoDB successful
+2024-06-08 18:27:28,557 - INFO - Data inserted into cleancrm successfully
+2024-06-08 18:27:28,557 - ERROR - An error occurred while inserting data: name must be an instance of str
+2024-06-08 18:27:28,564 - INFO - Connection to MongoDB closed
+2024-06-08 18:27:28,564 - INFO - Data insertion to MongoDB successful.
+2024-06-10 18:49:15,104 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallcrm1.csv
+2024-06-10 18:49:16,012 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smalldevice1.csv
+2024-06-10 18:49:16,026 - INFO - Connection to MongoDB successful
+2024-06-10 18:49:16,044 - INFO - Data inserted into cleancrm successfully
+2024-06-10 18:49:16,045 - ERROR - An error occurred while inserting data: name must be an instance of str
+2024-06-10 18:49:16,046 - INFO - Connection to MongoDB closed
+2024-06-10 18:49:16,046 - INFO - Data insertion to MongoDB successful.
+2024-06-10 18:59:01,961 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smallcrm1.csv
+2024-06-10 18:59:02,866 - INFO - Successfully read CSV from S3 bucket: myfirstbucket4563, key: smalldevice1.csv
+2024-06-10 18:59:02,877 - INFO - Connection to MongoDB successful
+2024-06-10 18:59:02,882 - INFO - Data inserted into cleancrm successfully
+2024-06-10 18:59:02,882 - ERROR - An error occurred while inserting data: name must be an instance of str
+2024-06-10 18:59:02,882 - INFO - Connection to MongoDB closed
+2024-06-10 18:59:02,882 - INFO - Data insertion to MongoDB successful.
+2024-06-24 18:23:22,848 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:23:22,849 - INFO - Connection to MongoDB successful
+2024-06-24 18:23:48,240 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:23:48,240 - INFO - Connection to MongoDB successful
+2024-06-24 18:24:02,638 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:24:02,639 - INFO - Connection to MongoDB successful
+2024-06-24 18:26:35,278 - ERROR - An error occurred: Mocked exception
+2024-06-24 18:26:35,279 - INFO - Connection to MongoDB successful
