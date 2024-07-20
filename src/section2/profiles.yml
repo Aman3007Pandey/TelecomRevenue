@@ -1,0 +1,15 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'ur26523.ap-southeast-1'
+      user: 'vanshh'
+      password: 'guam7TT78WbCv5q'
+      role: 'DEVELOPER'  # Specify your Snowflake role, if applicable
+      warehouse: 'PROJECT_WH'
+      database: 'PROJECT_SEC2_DB'
+      schema: 'BRONZE_LAYER'
+      authenticator: 'snowflake'  # Use 'snowflake' for password authentication
+      threads: 4
+      client_session_keep_alive: False

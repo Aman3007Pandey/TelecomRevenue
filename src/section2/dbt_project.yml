@@ -1,0 +1,31 @@
+name: 'my_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+# Define the model paths
+model-paths: ["models"]
+# Define the test paths
+test-paths: ["tests"]
+# Define the seed paths
+seed-paths: ["seeds"]
+# Define the macro paths
+macro-paths: ["macros"]
+
+profile: 'my_profile'
+
+vars:
+  unit_testing: false
+  schema: silver_layer
+  test_schema: test_silver_layer
+  gold_schema: gold_layer
+  test_gold_schema: test_gold_layer
+
+models:
+  my_dbt_project:
+    silver:
+      +materialized: table
+    gold: 
+      +materialized: view
+seeds:
+  my_dbt_project:  # This should match the name of your project
+      +schema: SEEDS  # This is the schema where seed tables will be placed
