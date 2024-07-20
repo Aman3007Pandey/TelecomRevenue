@@ -1,0 +1,35 @@
+# tests/schema.yml
+
+version: 2
+
+models:
+  - name: clean_crm_data
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+          - unique
+
+  - name: clean_device_data
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - IMEI_TAC
+            - msisdn
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+      - name: IMEI_TAC
+        tests:
+          - not_null
+      
+
+  - name: enriched_data
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+      - name: week_number
+        tests:
+          - not_null    
