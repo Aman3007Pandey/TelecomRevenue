@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS project_sec3_db.public.device_info_3NF (
+    MSISDN STRING NOT NULL,
+    IMEI_TAC STRING NOT NULL,
+    BRAND_NAME STRING,
+    OS_VENDOR STRING,
+    PRIMARY KEY (MSISDN, IMEI_TAC)
+);
+
+
+CREATE TABLE IF NOT EXISTS project_sec3_db.public.imei_os_3NF (
+    IMEI_TAC STRING PRIMARY KEY,
+    OS_NAME STRING
+);
+
+
+INSERT INTO project_sec3_db.public.device_info_3NF (MSISDN, IMEI_TAC, BRAND_NAME, OS_VENDOR)
+SELECT DISTINCT MSISDN, IMEI_TAC, BRAND_NAME, OS_VENDOR
+FROM project_sec3_db.public.device_info
+WHERE MSISDN IS NOT NULL AND IMEI_TAC IS NOT NULL;
+
+
+-- 2440100
+
+
+INSERT INTO project_sec3_db.public.imei_brand_3NF (IMEI_TAC, OS_NAME)
+SELECT DISTINCT IMEI_TAC, OS_NAME
+FROM project_sec3_db.public.device_info
+WHERE IMEI_TAC IS NOT NULL;
+
+
+-- 45462
