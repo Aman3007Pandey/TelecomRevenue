@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: PROJECT_SEC2_DB
+    schema: BRONZE_LAYER
+    tables:
+      - name: CRM
+      - name: DEVICE
+      - name: REV
